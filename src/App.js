@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import axios from 'axios';
 
@@ -17,6 +17,12 @@ function App() {
     let value = e.target.value;
     setAbstract(value);
   }
+
+  useEffect(() => {
+    if(localStorage.getItem('OPENAI_API_KEY').length != 51){
+      setShowModal(true)
+    }
+  }, []);
 
   let onGenerate = () => {
 
