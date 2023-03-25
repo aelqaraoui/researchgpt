@@ -5,6 +5,7 @@ import axios from 'axios';
 import './App.css';
 
 import Modal from './Modal';
+import Example from './Example';
 
 function App() {
   let [hidden, setHidden] = useState(true);
@@ -88,7 +89,7 @@ function App() {
         <button className='p-2 bg-black text-white border-solid border-2 border-white hover:bg-white hover:text-black hover:border-black rounded-md' onClick={() => setShowModal(true)}>sk-******</button>
       </div>
 
-      <Modal showModal={showModal} setShowModal={setShowModal}/>
+      <Example showModal={showModal} setShowModal={setShowModal}/>
       
     </div>
   );
