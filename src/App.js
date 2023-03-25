@@ -19,9 +19,15 @@ function App() {
   }
 
   useEffect(() => {
-    if(localStorage.getItem('OPENAI_API_KEY').length != 51){
+    try{
+      if(localStorage.getItem('OPENAI_API_KEY').length !== 51){
+        setShowModal(true)
+      }
+    } 
+    catch {
       setShowModal(true)
-    }
+    }  
+    
   }, []);
 
   let onGenerate = () => {
