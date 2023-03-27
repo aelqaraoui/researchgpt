@@ -50,6 +50,7 @@ export default function Example(props) {
                             All keys are saved in your browser
                         </Dialog.Title>
                       <div className="sm:col-span-4 mt-5">
+                      <a className='text-blue-500' target='_blank' rel='noreferrer' href='https://platform.openai.com/account/api-keys'>→ Get your API key from OpenAI dashboard.</a>
                         <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                             OPENAI API Key
                         </label>
