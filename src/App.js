@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 import axios from 'axios';
 
@@ -90,6 +91,8 @@ function App() {
       </div>
 
       <Example showModal={showModal} setShowModal={setShowModal}/>
+
+      <Analytics />
       
     </div>
   );
